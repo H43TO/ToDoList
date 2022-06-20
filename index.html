@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html id="html" lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="main.css">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        />
+        <title>Login</title>
+    </head>
+
+    <body class="todo-body">
+
+        <main class="todo-main">
+
+            <form class="todo-form">
+
+                <span class="todo-span">Todo App</span>
+                <!-- Declaring "add task" + make a text field and a button containing an icon -->
+                <div class="add-task-div">
+                    <input type="text" name="add-task-name-input" class="add-task-div" id="task-name" placeholder="Add your new 'todo' task">
+                    <button type="button" id="add-task-button"><i class="fa-solid fa-plus plus"></i></button>
+                </div>
+                <!-- Declaring "tasks" div  -->
+                <div class="tasks-body">
+                    <div class="tasks" id="task1">
+                        <input type="radio" class="radio-style">
+                        <span>Buy a new gaming laptop</span>
+                        <i class="fa-solid fa-pen-to-square edit first" id="icons"></i>
+                        <i class="fa-solid fa-trash-can delete" id="icons"></i>
+                    </div>
+                    <div class="tasks" id="task2">
+                        <input type="radio" class="radio-style">
+                        <span>Complete a previous task</span>
+                        <i class="fa-solid fa-pen-to-square edit second" id="icons"></i>
+                        <i class="fa-solid fa-trash-can delete" id="icons"></i>
+                    </div>
+                    <div class="tasks">
+                        <input type="radio" class="radio-style" checked>
+                        <span id="task3">Create a video for Youtube</span>
+                        <i class="fa-solid fa-pen-to-square edit third" id="icons"></i>
+                        <i class="fa-solid fa-trash-can delete" id="icons"></i>
+                    </div>
+                    <div class="tasks">
+                        <input type="radio" class="radio-style" checked>
+                        <span id="task4">Create a new portfolio site</span>
+                        <i class="fa-solid fa-pen-to-square edit" id="icons"></i>
+                        <i class="fa-solid fa-trash-can delete" id="icons"></i>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <span id="bottom-span">You have 2 pending tasks</span>
+                    <button id="bottom-button">Clear All</button>
+                </div>
+            </form>
+        </main>
+    </body>
+</html>
